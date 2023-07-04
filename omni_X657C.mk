@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 
-# Inherit from X657C device
-$(call inherit-product, device/infinix/X657C/device.mk)
+# Release name
+PRODUCT_RELEASE_NAME := X657C
 
 PRODUCT_DEVICE := X657C
 PRODUCT_NAME := omni_X657C
