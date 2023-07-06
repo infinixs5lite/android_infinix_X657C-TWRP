@@ -96,6 +96,10 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libion \
     libtinfo
 
+TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libtinfo.so.5
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-08-01
 
