@@ -14,9 +14,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 
-# Inherit from our custom product configuration
-$(call inherit-product, vendor/pb/config/common.mk)
-
 PRODUCT_DEVICE := X657C
 PRODUCT_NAME := omni_X657C
 PRODUCT_BRAND := Infinix
